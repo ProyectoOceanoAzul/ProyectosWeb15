@@ -1,0 +1,629 @@
+
+/*Google Fons       recomendable realizar la importacion del mismo archivo .css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+/*bootstrap Iconos*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
+
+/*Para resetear*/
+*{
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    /*    
+        outline: 1px solid red;
+    */
+
+
+
+    -webkit-box-sizing: border-box;
+
+}
+
+
+
+html,
+body{
+
+
+    /*
+    font-family: "Merriweather", serif;
+    font-family: "Open Sans", sans-serif;
+    */
+
+    /*Estilo 1 de parrafo*/
+    font-family: "Montserrat", sans-serif;
+
+    background-color: var(--colorEstilo1);
+
+    /*desplazamieento suave cuando se usa navevacion por ancla*/
+    scroll-behavior: smooth;
+
+}
+
+
+/*Estilos generales*/
+:root{
+
+    --colorEstilo1:#FFFFFF;    
+    --colorEstilo2:#000000;  
+    --colorEstilo3:#F9F9F9;
+    
+    --colorEstilo4:#FEF9FB;
+    --colorEstilo5:#F3D8D8;    
+    --colorEstilo6:#9EE1DA;  
+    --colorEstilo7:#C4C4C4;
+
+
+    
+    
+}
+
+
+/*Estilos genraels*/
+h1{
+    font-size: 3.5rem;    
+    font-weight: 500;
+}
+
+h2{
+    font-size: 4.5rem;    
+    font-weight: 300;
+}
+
+
+h3{
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+
+h4{
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+
+
+
+a{
+    text-decoration: none;
+    color: var(--colorEstilo2);
+}
+
+a:hover{
+    text-decoration: line-through;   
+    font-weight: 600;
+    color: #E19EA5;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin: 10px 0;
+}
+
+
+
+/*contenedor*/
+div.contenedor{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+
+
+    overflow: auto; /********************************/
+}
+
+
+/*contenedor__header*/
+header.contenedor__header{
+    height: 100vh;
+}
+
+
+header.contenedor__header{
+    background-image: url("../imagenes/background.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 50% 100%;
+}
+
+
+
+
+
+nav.contenedor__superior{
+    overflow: auto; /********************************/
+    /*padding-top: 10px;*/
+}
+
+
+div.superior__logo{
+    float: left;
+}
+
+
+div.superior__menu ul.menu__opciones{
+    list-style: none;
+    float: right;
+}
+
+
+div.superior__menu ul.menu__opciones li{
+    float: left;
+}
+
+
+div.superior__logo h1.logo__titulo{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+
+div.superior__logo h1.logo__titulo span{
+    font-weight: 700;
+}
+
+
+
+div.superior__menu ul.menu__opciones li a{
+    display: block;
+    padding: 10px 30px;
+    margin: 10px 0;
+    text-align: center;    
+}
+
+
+/*********************************/
+/*contenedor__banner*/
+div.banner__titulo1,
+div.banner__titulo2,
+div.banner__texto
+{
+    width: 50%;
+    margin-left: auto;
+    padding: 0 20px;
+}
+
+
+div.banner__titulo1 h6{
+    margin-bottom: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+div.banner__titulo2 h2{
+    font-weight: 200;
+}
+
+
+div.banner__texto p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+div.contenedor__banner{
+    margin-top: 160px;
+}
+
+
+div.banner__texto  a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--colorEstilo6);
+    border-radius: 20px;
+    color: var(--colorEstilo1);
+    font-weight: 600;
+    border: none;
+    text-decoration: none;
+}
+
+
+div.banner__texto  a:hover{
+    color: #E19EA5;
+}
+
+
+
+
+
+
+/*********************************/
+/*contenedor__features*/
+section.contenedor__features{
+    padding: 80px 0;
+}
+
+
+div.features__titulo h3{
+    padding-bottom: 50px;
+
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+
+/*********************************/
+/*contenedor__features*/
+div.features__fila div.fila__lado1{
+    float: left;
+    width: 50%;
+}
+
+div.features__fila div.fila__lado2{
+    float: left;
+    width: 50%;
+}
+
+
+div.fila__lado1 p{
+    font-size: 1rem;
+    text-align: left;
+}
+div.fila__lado2 p{
+    font-size: 1rem;
+    text-align: right;
+}
+
+
+div.features__fila{
+    text-align: center;
+}
+
+div.fila__lado1 img,
+div.fila__lado2 img
+{
+    width: 20%;
+    margin: 20px 0;
+}
+
+div.fila__lado1 img:hover,
+div.fila__lado2 img:hover
+{
+    box-shadow: 2px 5px 20px #E19EA5;
+
+}
+
+
+
+/*********************************/
+/*contenedor__contact*/
+section.contenedor__contact{
+    padding: 80px 0;
+
+    background-color: var(--colorEstilo4);
+}
+
+div.contact__titulo h3{
+    padding-bottom: 50px;
+    
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+
+/*********************************/
+/*contact__formulario*/
+div.contact__formulario{
+    width: 50%;
+    margin: auto;
+}
+
+form div.form__grupo{
+    margin-bottom: 1rem;
+}
+
+form label{
+    display: block;
+    margin-bottom: 0.6rem;
+}
+
+.form__control{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 10px;
+    border: none;
+
+    background-color: var(--colorEstilo5)
+}
+
+textarea.form__control{
+    line-height: 1.5rem;
+}
+
+form button{
+    width: 100%;
+    padding: 15px;
+    font-weight: 600;    
+
+    background-color: var(--colorEstilo7);
+    color: var(--colorEstilo1);
+    border-radius: 20px;
+    border: none;
+}
+
+form button:hover{
+    background-color: #E19EA5;
+    cursor: pointer;
+}
+
+
+
+/*********************************/
+/*contenedor__footer*/
+footer.contenedor__footer{
+    background-color: var(--colorEstilo2);
+}
+
+div.pie__titulo p{
+    text-align: center;
+    font-size: 11px;
+    padding: 10px 0;
+    margin: 10px 0;
+
+    color: var(--colorEstilo3);
+}
+
+span.autor
+{
+    color: var(--colorEstilo3);
+    font-weight: 600;
+}
+
+
+span.donacion a
+{
+    color: var(--colorEstilo3);
+    font-weight: 600;
+
+}
+
+span.donacion a:hover{
+    text-decoration: underline;
+}
+
+
+
+/**************************************/
+/*Responsive 1*/
+@media only screen and  (max-width: 575.98px) and
+                        (max-width: 767.98px) and
+                        (max-width: 991.98px) and
+                        (max-width: 1199.98px) and
+                        (max-width: 1399.98px)
+{
+
+
+
+    div.superior__logo{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    div.superior__menu{
+        float: none;
+        width: 100%;
+        text-align: center;
+
+     /*   padding: 0;*/
+    }
+
+
+    ul.menu__opciones li{
+        float: none;
+        width: 100%;        
+        
+        padding: 0;
+        
+    }
+
+
+    ul.menu__opciones li a{
+        text-align: center;
+        padding: 10px;
+        font-size: 0.9rem;
+        width: 100%;
+
+        margin: auto;
+    }
+
+
+    /**************************************/
+    /*contenedor__banner*/
+    div.banner__titulo1{
+        float: none;
+        width: 100%;
+    }
+
+
+   div.banner__titulo2{
+        float: none;
+        width: 100%;
+    }
+
+
+   div.banner__texto{
+        float: none;
+        width: 100%;
+    }
+
+
+
+    header.contenedor__header{
+        height: 100%;   /*********************************/    
+    }
+
+
+
+
+
+    div.contenedor__banner{
+        margin-top: 50px;
+    }
+
+    div.contenedor__banner div.banner__titulo1 h6{
+        text-align: right;
+    }
+
+    div.contenedor__banner div.banner__titulo2 h2{
+        font-size: 2.8rem;
+        text-align: right;
+    }
+
+    div.contenedor__banner div.banner__texto{
+        text-align: right;
+    }
+
+
+    div.contenedor__banner div.banner__texto p{
+        font-size: 1rem;
+    } 
+
+
+
+    /**************************************/
+    /*contenedor__banner*/
+    section.contenedor__features div.features__fila div.fila__lado1{
+        float: none;
+        width: 100%;
+    }
+
+    section.contenedor__features div.features__fila  div.fila__lado2{
+        float: none;
+        width: 100%;
+    }
+
+    div.features__titulo h3{
+        padding-bottom: 20px;
+    }
+
+    div.fila__lado1 img,
+    div.fila__lado2 img
+    
+    {
+        float: left;     
+        margin-right: 15px;   
+        margin-top: 0px;
+        width: 15%;
+    }
+    
+    div.fila__lado1 p,
+    div.fila__lado2 p
+    {
+        padding-right: 10px;
+        padding-left: 65px;
+        font-size: 0.85rem;
+        text-align: justify;
+        line-height: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+
+
+
+
+
+
+    /**************************************/
+    /*contenedor__contact*/
+
+    div.contact__titulo h3{
+        padding-bottom: 20px;
+    }
+
+
+    div.contact__formulario{
+        width: 100%;
+    }
+
+
+
+}
+
+
+
+
+/**************************************/
+/*Responsive 2*/
+@media only screen and  (max-width: 540px){
+
+    /**************************************/
+    /*contenedor__banner*/
+    section.contenedor__features div.features__fila div.fila__lado1{
+        float: none;
+        width: 100%;
+    }
+
+    section.contenedor__features div.features__fila  div.fila__lado2{
+        float: left;
+        width: 100%;
+    }
+
+    div.features__titulo h3{
+        padding-bottom: 20px;
+    }
+
+    div.fila__lado1 img,
+    div.fila__lado2 img
+    
+    {
+        float: left;     
+        margin-right: 15px;   
+        margin-top: 0px;
+        width: 15%;
+    }
+    
+    div.fila__lado1 p,
+    div.fila__lado2 p
+    {
+        padding-right: 10px;
+        padding-left: 65px;
+        font-size: 0.85rem;
+        text-align: justify;
+        line-height: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    
+}
+
+
+
+
+
+/**************************************/
+/*Responsive 2*/
+@media only screen and  (max-width: 640px){
+
+
+    /*********/
+    header.contenedor__header{
+        height: 100%;   /*********************************/    
+    }
+
+
+}
+
+
+
+
